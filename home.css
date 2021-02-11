@@ -1,0 +1,351 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+.top{
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    z-index:2;
+}
+.toggle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: 0;
+    margin-right: 15%;
+    margin-top: 0%;
+    z-index:1;  
+}
+span{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(235, 49, 49);
+    transition: 0.3s ease-in;
+}
+.fa:hover{
+    transform: translateY(-5px);
+    transition: 0.2s ease-in;
+}
+.active{
+    transition: 0.5s ease-in;
+}
+span:nth-child(1){
+width: 100%;
+}
+span:nth-child(2){
+    width: 70%;
+}
+span:nth-child(3){
+    width: 30%;
+}
+.active span:nth-child(1){
+    width: 30%;
+}
+.active span:nth-child(2){
+    width: 70%;
+}
+.active span:nth-child(3){
+     width: 100%;
+}
+.main{
+    height: 50%;
+    width: 100%;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    transform: translateY(-80%);
+    z-index: 1;
+}
+.logo{
+    grid-column: 2/3;
+}
+.icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    grid-gap: 1rem;
+}
+.fa{ margin-top: 1rem;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    transition: 0.2s ease-out;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    background: linear-gradient(to top, aliceblue, rgb(190, 232, 245));
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    width: 300px;
+    height: 360px;
+    background-color: white;
+    margin: 5% 1%;
+    padding: 0.5% 1%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in;
+    
+}
+.container .img {
+    position: relative;
+    max-width: 260px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 4px;
+    top: -60px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    left: 20px;
+    z-index: 1;
+    background-color: white;
+}
+.container .img img{
+    width: 100%;
+}
+section .container:hover{
+    height: 472px;
+}
+.container .maiin{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+.container .maiin h1{
+    margin-bottom: 1rem;
+}
+.container:hover .maiin{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.3s;
+    margin-top: -40px;
+}
+.fluid{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient(to bottom, aliceblue, rgb(190, 232, 245));
+}
+.image{
+   position: relative;
+   width: 400px;
+   height: 350px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 1;
+}
+.image img{
+    width: 81%;
+    height: 75%;
+    transition: 0.3s ease-in;
+}
+.image::before{
+    content: "";
+    width: 100%;
+    height: 93%;
+    position: absolute;
+    opacity: 0.7;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+.image:hover img{
+    transform: scale(1.2);
+    transition: 0.4s ease-in;
+}
+.content{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0% 5%;
+}
+.content p {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    font-weight: bold;
+}
+h3{
+
+    text-align: center;
+    position: relative;
+    padding-left: 30%;
+}
+.act span{
+
+   background: transparent;
+}
+.act h3:before{
+   z-index: 2;
+    content: "";
+    display: block;
+    height: 2px;
+    background: #000;
+    width: 40%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0%,50%);
+}
+
+.act h3:after{
+   z-index: 2;
+    content: "";
+    display: block;
+    width: 10%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0%,50%);
+}
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to top, white, rgb(190, 232, 245));
+}
+.right{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100px;
+    height: 50px;
+}
+
+
+@media only screen and (max-width: 812px) {
+
+nav::before,
+nav::after
+{
+    display: none;
+}
+.container .maiin
+{
+    position: relative;
+    margin-top: -35px;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+.container:hover .maiin,
+section .container:hover
+{
+   height: auto;
+}
+section{
+    height:auto;
+    padding: 5% 0%;
+}
+.container
+{
+    width: 200px;
+    height:342px;
+    margin: 9% 0%;
+}
+.image img
+{
+    width: 72%;
+    height: 66%;
+}
+.image::before
+{
+    content: "";
+    width: 90%;
+    height: 83%;
+    position: absolute;
+    opacity: 0.7;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+section::before,
+section::after{
+   display:none;
+}
+.container .img 
+{
+    position: relative;
+    max-width: 160px;
+    height: 210px;
+}
+.act h3:before,
+.act h3::after
+{
+    display: none;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .container
+{
+    width: 210px;
+    height:342px;
+    margin: 9% 1%;
+}
+.image img
+{
+    width: 75%;
+    height: 66%;
+}
+.container .img {
+    position: relative;
+    max-width: 260px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 4px;
+    top: -60px;
+    left: 0px;
+    z-index: 1;
+    background-color: white;
+}
+
+section .container:hover{
+    height: 380px;
+}
+
+}

@@ -1,0 +1,129 @@
+nav{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(./images/83-838381_html-wallpaper-background-code-coding-tags.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    object-position: top;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav .imagee{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 30%;
+    right:20%;
+    margin-left: 10%;
+}
+nav img{
+    position: relative;
+}
+nav .text button{
+    background-color:rgb(235, 49, 49) ;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transform: translate(-50%, 30%);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    transition: 0.2s ease-out;
+}
+nav .text button:hover{
+    transition: 0.2s ease-in;
+    background-color: black;
+    color: white;
+
+}
+nav .text{
+    position: absolute;
+    top: 45%;
+    width: 300xp;
+    left: 20%;
+    color: white;
+}
+nav .text span{
+    background-color: rgb(235, 49, 49);
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: white;
+}
+nav img:nth-child(1){
+   width: 70px;
+   position: relative;
+   animation: mymove 5s infinite forwards;
+}
+ @keyframes mymove {
+  0%   {top: 0px; left: 0px;}
+  25%  {top: 0px; left: 100px;}
+  50%  {top: 100px; left: 100px;}
+  75%  {top: 100px; left: 0px}
+  100% {top: 0px; left: 0px;}
+}
+nav img:nth-child(2){
+    width: 100px;
+    position: relative;
+    animation: mymove1 8s infinite forwards;
+}
+@keyframes mymove1 {
+    0%   {top: 0px; left: 0px;}
+    25%  {top: 0px; left: 40px;}
+    50%  {top: 60px; left: 40px;}
+    75%  {top: 40px; left: 0px}
+    100% {top: 0px; left: 0px;}
+}
+nav img:nth-child(3){
+    width: 120px;
+    position: relative;
+    animation: mymove2 6s infinite forwards;
+}
+@keyframes mymove2 {
+    0%   {top: -30px; left: 0px;}
+    25%  {top: 0px; left: 20px;}
+    50%  {top: 40px; left: 30px;}
+    75%  {top: 20px; left: 0px}
+    100% {top: -30px; left: 0px;}
+}
+nav img:nth-child(4){
+    position: relative;
+    animation: mymove3 9s infinite forwards;
+    width: 50px;
+}
+@keyframes mymove3 {
+    0%   {top: 0px; left: 0px;}
+    25%  {top: 0px; left: 100px;}
+    50%  {top: 100px; left: 70px;}
+    75%  {top: 130px; left: 60px;}
+    100% {top: 40px; left: 0px;}
+   }
+nav img:nth-child(5){
+    position: relative;
+    animation: mymove4 4s infinite forwards;
+    width: 90px; 
+}
+@keyframes mymove4 {
+    0%   {top: 0px; left: 0px;}
+    25%  {top: 0px; left: 100px;}
+    50%  {top: 100px; left: 200px;}
+    75%  {top: 50px; left: 0px;}
+    100% {top: 0px; left: 0px;}  
+}
+nav img:nth-child(6){
+    position: relative;
+    animation: mymove5 11s infinite forwards;
+    width: 100px; 
+}
+ @keyframes mymove5 {
+    0%   {top: 0px; left: 0px;}
+    25%  {top: 0px; left: 100px;}
+    50%  {top: 100px; left: 100px;}
+    75%  {top: 40px; left: 0px;}
+    100% {top: 0px; left: 0px;}  
+}
